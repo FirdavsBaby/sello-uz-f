@@ -1,0 +1,45 @@
+section#login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px white;
+        background-color: var(--gray);
+        padding: 70px 20px;
+        gap: 30px;
+        align-items: center;
+        border-radius: 10px;
+        transition: all ease-in-out 0.4s;
+        &:hover {
+        box-shadow: 0 0 40px white;   
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border: 0;
+            border-radius: 10px;
+        }
+        h2 {
+            font-size: 40px;
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 0;
+            background-color: var(--black);
+            color: white;
+        }
+    }
+}

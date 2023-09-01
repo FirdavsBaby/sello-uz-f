@@ -1,0 +1,28 @@
+section#thank {
+    width: 100%;
+    margin-top: 154px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        width: 20%;
+        text-align: center;
+        color: gray;
+    }
+    .link {
+        width: 20%;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        border-radius: 10px;
+        background-color: var(--green);
+    }
+}

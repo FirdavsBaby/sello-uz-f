@@ -1,0 +1,94 @@
+#card {
+    width: 100%;
+    border: 0.5px solid rgba(128, 128, 128, 0.356);
+    display: flex;
+    border-radius: 10px;
+    padding: 15px;
+    gap: 20px;
+    img {
+        width: 16%;
+        height: 100%;
+        border: 15px solid rgba(128, 128, 128, 0.119);
+        border-radius: 10px;
+    }
+    .end-card {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 10px;
+        justify-content: center;
+        .link:hover {
+            color: var(--green);
+        }
+        p.price {
+            color: var(--green);
+            display: flex;
+            gap: 20px;
+            span {
+                color: gray;
+                padding: 3px;
+                font-size: 13px;
+                background-color: #e0297b3a;
+                display: flex;
+                gap: 5px;
+                border-radius: 5px;
+                p.discount-minus {
+                    text-decoration: line-through;
+                }
+            }
+        }
+        p.country {
+            color: gray;
+            font-size: 15px;
+            span {
+                color: black;
+                font-size: 18px;
+            }
+        }
+        .end-card-footer {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .btns {
+                display: flex;
+                gap: 15px;
+                button {
+                    border: 0;
+                    background-color: white;
+                    color: gray;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    transition: all ease-in-out 0.3s;
+                    font-size: 15px;
+                    &:hover {
+                        color: var(--green);
+                    }
+                    &:nth-child(2) {
+                        color: rgb(255, 0, 64);
+                    }
+                }
+            }
+            .count-emiter {
+                display: flex;
+                gap: 10px;
+                font-size: 20px;
+                align-items: center;
+                color: var(--green);
+                button {
+                    color: var(--green);
+                    background-color: white;
+                    border: 2px solid var(--green);
+                    padding: 5px 7px;
+                    border-radius: 8px;
+                }
+                .in-active {
+                    color: gray;
+                    border: 2px solid gray;
+                    
+                }
+            }
+        }
+    }
+}

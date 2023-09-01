@@ -1,0 +1,26 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    h2 {
+        font-size: 40px;
+        color: white;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            color: var(--black);
+            padding: 8px;
+          }
+          th {
+            color: white;
+          }
+
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+    }
+}

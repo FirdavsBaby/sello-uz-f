@@ -1,0 +1,94 @@
+
+.card {
+    width: 14.7%;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    height: 450px;
+    border: 1px solid;
+    .clicklable_link {
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 10px;
+            height: 250px;
+            object-fit: cover;
+            }
+            p {
+                font-size: 14px;
+                height: 3.1rem; 
+                overflow: hidden; 
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                margin-top: 10px;
+                text-align: start;
+                &:hover {
+                    color: var(--green);
+                }
+            }
+            .old-price {
+                text-decoration: line-through;
+                font-size: 14px;
+                font-weight: normal;
+                color: gray;
+            }
+            h4 {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-size: 10px;
+                    padding: 5px;
+                    border-radius: 20px;
+                    color: white;
+                    background-color: #df4c5a;
+                }
+            }
+    }
+    .end {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        button.add-to-cart {
+            width: 100%;
+            background-color: var(--green);
+            border: 0;
+            border-radius: 10px;
+            padding: 8px;
+            color: white;
+            transition: all ease-in-out 0.3s;
+            position: relative;
+            &:hover {
+                background-color: rgb(26, 136, 136);
+            }
+        }
+    }
+    button.add-to-like {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        border: 0;
+        padding: 5px;
+        background-color: rgba(128, 128, 128, 0.466);
+        color: white;
+        transition: all ease-in-out 0.2s;
+        &:hover {
+            color: var(--pink);
+            font-size: 28px;
+        }
+    }
+    button.add-to-like.active {
+        color: var(--green);
+    }
+}

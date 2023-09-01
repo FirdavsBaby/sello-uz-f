@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #8080803a;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --green: #00b3a8;
+    --pink: #e0297c;
+    --gray: #3b3b3b;
+    --black: #100f0f
+}
+
+
+
+.container {
+    margin: 0 auto;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    }
+::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 5px;
+}
