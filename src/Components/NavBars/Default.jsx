@@ -10,6 +10,7 @@ const Default = ({setAuthModal,me}) => {
     const [useCatalog, setUseCatalog] = useState(null)
     const [firstCatalogs, setFirstCatalogs] = useState(null)
     const [searchValue, setSearchValue] = useState("")
+    const [dropdownActive, setDropdownActive] = useState(false)
     const navigate = useNavigate()
     useEffect(()=> {
         (async function() {
@@ -30,12 +31,15 @@ const Default = ({setAuthModal,me}) => {
     function setModal(link) {
         if(me) return navigate(`/${link}`)
         setAuthModal("sendCode")
+        setDropdownActive(false)
     }
     function onclickCatalog(name) {
         navigate(`/filter/${name}/all/all/all/all`)
+        setDropdownActive(false)
     }
     function onclickCategory(name) {
         navigate(`/filter/all/${name}/all/all/all`)
+        setDropdownActive(false)
     }
     function search(e) {
         e.preventDefault()
@@ -48,7 +52,7 @@ const Default = ({setAuthModal,me}) => {
             <Link to="/" className='start'><img src={Logo} alt=""/></Link>
             <div className='center'>
             <label htmlFor='dropdown_activate'  id='dropdown'><i className="fa-solid fa-bars"></i> Catalog</label>
-            <input type="checkbox" id='dropdown_activate' hidden/>
+            <input type="checkbox" id='dropdown_activate' checked={dropdownActive} onChange={() => setDropdownActive((c) => !c)} hidden/>
             <div id='dropdown-window'>
                 <hr />
                 <ul className='catalogs'>
